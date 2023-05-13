@@ -58,7 +58,7 @@ echo "TensorFlow/models" >> .gitignore
 
 ## Check protobuff version 
 
-- Go to TensorFlow/models/research/ and run the following command
+- run the following command
 
 ```bash
 cd TensorFlow/models/research
@@ -67,7 +67,7 @@ protoc --version
 
 ## Convert all protobuff files into python files
 
-- Go to TensorFlow/models/research/ and run the following command
+- run the following command
 
 ```bash
 cd TensorFlow/models/research
