@@ -36,4 +36,11 @@ mkdir TensorFlow && cd TensorFlow
 git clone https://github.com/tensorflow/models.git
 ```
 
+remove .git dir of models repository to avoid git conflicts
+
+add models folder to .gitignore
+```bash
+echo TensorFlow/models >> .gitignore
+```
+
 

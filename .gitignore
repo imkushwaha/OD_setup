@@ -134,12 +134,5 @@ dmypy.json
 # if using VScode
 .vscode
 
-# add secret keys or API keys here
-configs/secrets.yaml
-
-# add your env folder here if its there
-
-
-
-artifacts/prepared/test.tsv
-artifacts/prepared/train.tsv
+# models directory
+TensorFlow/models
