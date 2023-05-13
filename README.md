@@ -43,7 +43,7 @@ add models folder to .gitignore
 echo "TensorFlow/models" >> .gitignore
 ```
 
-## Protobuff Installation/compilation
+## Protobuff Installation/Compilation
 
 - Visit the link - https://github.com/protocolbuffers/protobuf/releases
  - windows user - 
@@ -112,9 +112,12 @@ python object_detection/builders/model_builder_tf2_test.py
   ```
 
 
-
-
-
+# Custom model training
+```bash
+mkdir workspace/training_demo
+cd workspace/training_demo
+mkdir -p annotations exported-models models pre-trained-models images/test images/train
+```
 
 
 
