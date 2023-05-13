@@ -136,3 +136,4 @@ dmypy.json
 
 # models directory
 TensorFlow/models
+protoc
