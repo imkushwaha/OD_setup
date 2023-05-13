@@ -74,6 +74,30 @@ cd TensorFlow/models/research
 protoc object_detection/protos/*.proto --python_out=.
 ```
 
+## Install COCO API
+```bash
+pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+```
+
+## Install Object Detection API
+- From within TensorFlow/models/research/
+
+```bash
+cp object_detection/packages/tf2/setup.py .
+python -m pip install .
+```
+
+## test your installation
+- From within TensorFlow/models/research/
+```bash
+python object_detection/builders/model_builder_tf2_test.py
+```
+
+
+
+
+
+
 
 
 
