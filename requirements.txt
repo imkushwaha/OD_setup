@@ -3,5 +3,4 @@ tf-models-official
 tensorflow_io==0.23.1
 notebook
 Cython
-#git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 labelImg
