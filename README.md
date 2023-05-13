@@ -60,13 +60,19 @@ echo "TensorFlow/models" >> .gitignore
 
 - Go to TensorFlow/models/research/ and run the following command
 
-```protoc --version```
+```bash
+cd TensorFlow/models/research
+protoc --version
+```
 
 ## Convert all protobuff files into python files
 
 - Go to TensorFlow/models/research/ and run the following command
 
-```protoc object_detection/protos/*.proto --python_out=.```
+```bash
+cd TensorFlow/models/research
+protoc object_detection/protos/*.proto --python_out=.
+```
 
 
 
