@@ -1,4 +1,4 @@
-# Commands
+# TensorFlow 2 Object Detection
 
 ## Download gitignore using curl
 
@@ -160,12 +160,15 @@ python generate_tfrecord.py -x images/train -l annotations/label_map.pbtxt -o an
 ```bash
 python generate_tfrecord.py -x images/test -l annotations/label_map.pbtxt -o annotations/test.record
 ```
+# Configuring a Training Job
 
+## Go to [model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) and download SSD ResNet50 V1 FPN 640X640 (RetinaNet50)
 
+- extract the downloaded model into training_demo/pre-trained-model directory
 
-
-
-
+## Configure training pipeline
+- create a folder my_ssd_resnet50_v1_fpm in training_demo/models folder
+- copy pipeine.config from to my_ssd_resnet50_v1_fpm from pre-trained_model directory
 
 
 
