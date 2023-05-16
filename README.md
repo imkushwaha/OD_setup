@@ -167,8 +167,34 @@ python generate_tfrecord.py -x images/test -l annotations/label_map.pbtxt -o ann
 - extract the downloaded model into training_demo/pre-trained-model directory
 
 ## Configure training pipeline
-- create a folder my_ssd_resnet50_v1_fpm in training_demo/models folder
-- copy pipeine.config from to my_ssd_resnet50_v1_fpm from pre-trained_model directory
+- create a folder my_ssd_resnet50_v1_fpm in training_demo/models folder,
+- copy pipeline.config from to my_ssd_resnet50_v1_fpm from pre-trained_model directory,
+- update it as per the documentation - [link](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html)
+
+## Copy training file from TensorFlow/models/reserch/object_detection/ to the root of training_demo folder
+
+```bash
+cp ../../TensorFlow/models/reserch/object_detection/model_main_tf2.py .
+```
+
+## Start training by running the following command - 
+```bash
+python model_main_tf2.py --model_dir=models/my_ssd_resnet50_v1_fpn --pipeline_config_path=models/my_ssd_resnet50_v1_fpn/pipeline.config
+```
+
+## Exporting a Trained Model
+
+```bash
+cp ../../TensorFlow/models/research/object_detection/exporter_main_v2.py .
+
+python exporter_main_v2.py --input_type image_tensor --pipeline_config_path ./models/my_ssd_resnet50_v1_fpn/pipeline.config --trained_checkpoint_dir ./models/my_ssd_resnet50_v1_fpn/ --output_directory ./exported-models/my_model
+```
+
+
+
+
+
+
 
 
 
