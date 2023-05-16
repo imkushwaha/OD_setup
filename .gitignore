@@ -151,3 +151,7 @@ workspace/training_demo/pre-trained-models/ssd_resnet50_v1_fpn_640x640_coco17_tp
 workspace/training_demo/pre-trained-models/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/saved_model/saved_model.pb
 workspace/training_demo/pre-trained-models/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/saved_model/variables/variables.data-00000-of-00001
 workspace/training_demo/pre-trained-models/ssd_resnet50_v1_fpn_640x640_coco17_tpu-8/saved_model/variables/variables.index
+workspace/training_demo/models/my_ssd_resnet50_v1_fpn/checkpoint
+workspace/training_demo/models/my_ssd_resnet50_v1_fpn/ckpt-1.data-00000-of-00001
+workspace/training_demo/models/my_ssd_resnet50_v1_fpn/ckpt-1.index
+workspace/training_demo/models/my_ssd_resnet50_v1_fpn/train/events.out.tfevents.1684229786.LAPTOP-MQOSC6GE.15460.0.v2
