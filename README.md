@@ -122,6 +122,8 @@ mkdir -p annotations exported-models models pre-trained-models images/test image
 
 
 
+
+
 - Source URL: https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#tensorflow-object-detection-api-installation
 
 
